@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Patient records query</title>
+</head>
+<body>
+  <h1>Patient records query</h1>
+  <form id="form">
+    <textarea id="question" placeholder="e.g. who has diabetes?" required autofocus rows="3" cols="60"></textarea><br/>
+    <button type="submit" id="submit">Ask</button>
+  </form>
+  <pre id="answer"></pre>
+
+  <script>
+    const form = document.getElementById('form');
+    const questionEl = document.getElementById('question');
+    const submitBtn = document.getElementById('submit');
+    const answerEl = document.getElementById('answer');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const question = questionEl.value.trim();
+      if (!question) return;
+
+      submitBtn.disabled = true;
+      answerEl.textContent = 'Thinking…';
+
+      try {
+        const res = await fetch('/query', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ question }),
+        });
+        const json = await res.json();
+        if (!res.ok) throw new Error(json.error || 'request failed');
+        answerEl.textContent = json.answer;
+      } catch (err) {
+        answerEl.textContent = 'Error: ' + err.message;
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+[
+    {
+        "id": "P001",
+        "name": "Muhammad Aziz Bin Hamid",
+        "age": 52,
+        "presenting_symptoms": [
+            "diabetes complications",
+            "high blood pressure",
+            "blurred vision"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-18",
+                "facility": "Klinik Kesihatan Kuala Lumpur",
+                "notes": "HbA1c: 9.1%, BP: 155/95. Referral to Hospital Kuala Lumpur for eye screening."
+            },
+            {
+                "date": "2026-05-01",
+                "facility": "Klinik Kesihatan Kuala Lumpur",
+                "notes": "Diabetes follow-up, medication adjusted."
+            }
+        ],
+        "lifestyle_notes": "Construction worker in Klang Valley, high sedentary time during rest, loves nasi lemak and fried food, no exercise",
+        "current_treatment_plan": "Metformin 1000mg twice daily, Gliclazide 80mg daily, Lisinopril 10mg daily, referral for diabetic retinopathy screening"
+    },
+    {
+        "id": "P002",
+        "name": "Siti Nur Fatimah Binti Khalid",
+        "age": 38,
+        "presenting_symptoms": [
+            "persistent cough",
+            "shortness of breath",
+            "chest discomfort"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-17",
+                "facility": "Klinik Kesihatan Shah Alam",
+                "notes": "Chest X-ray shows mild pneumonia. CXR referred to MOH clinic."
+            },
+            {
+                "date": "2026-05-12",
+                "facility": "Klinik Kesihatan Shah Alam",
+                "notes": "Initial assessment, O2 saturation 94%."
+            }
+        ],
+        "lifestyle_notes": "Housewife, exposed to cooking smoke, lives in Shah Alam with 2 children, non-smoker",
+        "current_treatment_plan": "Amoxicillin 500mg 3x daily, Salbutamol inhaler as needed, rest for 1-2 weeks"
+    },
+    {
+        "id": "P003",
+        "name": "Lim Chee Wah",
+        "age": 61,
+        "presenting_symptoms": [
+            "joint pain and swelling",
+            "morning stiffness",
+            "fatigue"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-15",
+                "facility": "Sunway Medical Centre",
+                "notes": "Rheumatoid factor positive. Referral to rheumatologist Dr Wong. ESR elevated at 45."
+            },
+            {
+                "date": "2026-04-28",
+                "facility": "Sunway Medical Centre",
+                "notes": "Initial X-ray and blood work completed."
+            }
+        ],
+        "lifestyle_notes": "Retired businessman in Petaling Jaya, enjoys dim sum and herbal soups, limited exercise, moderate stress",
+        "current_treatment_plan": "Methotrexate 12.5mg weekly, Indomethacin 50mg daily, folic acid supplementation, rheumatology follow-up"
+    },
+    {
+        "id": "P004",
+        "name": "Priya Devi Subramaniam",
+        "age": 45,
+        "presenting_symptoms": [
+            "severe headaches",
+            "dizziness",
+            "elevated blood pressure"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-19",
+                "facility": "Pantai Medical Centre KL",
+                "notes": "BP readings: 170/105. MRI brain normal. Neurologist consultation scheduled."
+            },
+            {
+                "date": "2026-05-10",
+                "facility": "Pantai Medical Centre KL",
+                "notes": "Initial presentation with CBC and lipid panel ordered."
+            }
+        ],
+        "lifestyle_notes": "Bank manager, high stress work, works long hours in KLCC, high-sodium vending food diet, no exercise routine"
+    },
+    {
+        "id": "P005",
+        "name": "Zaini Bin Abdullah",
+        "age": 56,
+        "presenting_symptoms": [
+            "chest pain on exertion",
+            "shortness of breath",
+            "sweating"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-16",
+                "facility": "Universiti Malaya Medical Centre",
+                "notes": "ECG shows ST depression. Troponin: negative. Cardiology referral urgent."
+            },
+            {
+                "date": "2026-05-14",
+                "facility": "Hospital Selamat Johor Bahru",
+                "notes": "Emergency admission via A&E department."
+            }
+        ],
+        "lifestyle_notes": "Taxi driver in Johor Bahru, works 12+ hours daily, heavy smoker (20 cigarettes/day), drinks teh tarik regularly",
+        "current_treatment_plan": "Aspirin 300mg stat, Atenolol 50mg daily, Atorvastatin 40mg nightly, cardiac catheterization pending"
+    },
+    {
+        "id": "P006",
+        "name": "Wong Mei Lin",
+        "age": 29,
+        "presenting_symptoms": [
+            "anxiety",
+            "insomnia",
+            "panic attacks"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-18",
+                "facility": "Klang Integrated Mental Health Service",
+                "notes": "Anxiety disorder confirmed. Referred to psychiatrist Dr. Tan for medication review."
+            },
+            {
+                "date": "2026-05-08",
+                "facility": "Klinik Kesihatan Klang",
+                "notes": "Initial consult, vitals stable."
+            }
+        ],
+        "lifestyle_notes": "Software developer in Cyberjaya, high work stress, irregular sleep, works from home mostly, no outdoor activities",
+        "current_treatment_plan": "Sertraline 50mg daily, Alprazolam 0.5mg at night as needed, cognitive behavioral therapy referral"
+    },
+    {
+        "id": "P007",
+        "name": "Ravi Shankar Pillai",
+        "age": 50,
+        "presenting_symptoms": [
+            "type 2 diabetes",
+            "excessive thirst",
+            "weight gain"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-17",
+                "facility": "Institut Nutrisi Negara",
+                "notes": "HbA1c: 8.9%, fasting glucose: 156 mg/dL. Nutritionist consultation completed. Weight: 92kg, BMI: 31.5"
+            },
+            {
+                "date": "2026-04-30",
+                "facility": "Klinik Kesihatan Selayang",
+                "notes": "Diabetes screening positive, referral to specialist clinic."
+            }
+        ],
+        "lifestyle_notes": "Restaurant owner in Sentosa, high-calorie food exposure, irregular meal times, loves goreng-goreng, sedentary lifestyle",
+        "current_treatment_plan": "Gliclazide 80mg daily, Metformin 1000mg twice daily, dietary management, 30min walking daily, weight loss target 5kg"
+    },
+    {
+        "id": "P008",
+        "name": "Encik Mohd Karim Bin Mohd",
+        "age": 68,
+        "presenting_symptoms": [
+            "memory loss",
+            "confusion",
+            "falls at home"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-15",
+                "facility": "Hospital Tun Razak",
+                "notes": "MMSE score: 18/30 (mild cognitive impairment). MRI brain: mild cerebral atrophy. Neurology referral pending."
+            },
+            {
+                "date": "2026-04-20",
+                "facility": "Klinik Kesihatan Pudu",
+                "notes": "Family reported increasing forgetfulness, referred for cognitive assessment."
+            }
+        ],
+        "lifestyle_notes": "Retired teacher in Kampung Selamat, lives with son and grandchildren, enjoys traditional games, limited social activities",
+        "current_treatment_plan": "Donepezil 5mg nightly, home safety modifications, occupational therapy referral, family support coordination"
+    },
+    {
+        "id": "P009",
+        "name": "Tan Chen Hao",
+        "age": 34,
+        "presenting_symptoms": [
+            "gastric pain",
+            "acid reflux",
+            "loss of appetite"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-17",
+                "facility": "Subang Jaya Medical Centre",
+                "notes": "H. pylori serology positive. Endoscopy scheduled at private clinic."
+            },
+            {
+                "date": "2026-05-10",
+                "facility": "Subang Jaya Medical Centre",
+                "notes": "Initial assessment with food diary review, works in food court area."
+            }
+        ],
+        "lifestyle_notes": "Food court entrepreneur in Bandar Sunway, eats spicy street food regularly, high caffeine intake, late-night work shifts",
+        "current_treatment_plan": "Omeprazole 20mg daily, Clarithromycin 500mg twice daily, Amoxicillin 500mg 3x daily for 7 days, dietary modifications"
+    },
+    {
+        "id": "P010",
+        "name": "Nur Azida Binti Ismail",
+        "age": 48,
+        "presenting_symptoms": [
+            "hot flashes",
+            "mood swings",
+            "insomnia",
+            "joint pain"
+        ],
+        "consultation_history": [
+            {
+                "date": "2026-05-18",
+                "facility": "Woman's Health Clinic, Universiti Malaya",
+                "notes": "Menopause confirmed, FSH levels elevated. HRT options discussed with patient."
+            },
+            {
+                "date": "2026-05-05",
+                "facility": "Klinik Kesihatan Petaling",
+                "notes": "Initial consultation for menopausal symptoms, vital signs stable."
+            }
+        ],
+        "lifestyle_notes": "Primary school teacher in Kuala Lumpur, loves teh tarik and kuih, exercises 2x/week, married with 2 teenage children",
+        "current_treatment_plan": "Estradiol patches weekly 0.05mg, Progesterone 100mg nightly, Calcium + Vitamin D supplementation, traditional ginger and turmeric drinks"
+    }
+]

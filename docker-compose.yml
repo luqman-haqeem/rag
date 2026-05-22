@@ -1,0 +1,42 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: patient-caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - query
+
+  query:
+    build: .
+    image: patient-data:latest
+    container_name: patient-query
+    restart: unless-stopped
+    env_file: .env
+    expose:
+      - "3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+  ingest:
+    build: .
+    image: patient-data:latest
+    container_name: patient-ingest
+    env_file: .env
+    command: ["node", "ingest.js"]
+    profiles: ["ingest"]
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+volumes:
+  caddy_data:
+  caddy_config:
