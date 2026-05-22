@@ -27,17 +27,6 @@ async function embedChunk(text) {
 async function main() {
   const chunks = chunker(patientsJson);
 
-  const { error: deleteError } = await supabase
-    .from('patient_chunks')
-    .delete()
-    .neq('id', 0);
-
-  if (deleteError) {
-    console.error('Error clearing table:', deleteError);
-    return;
-  }
-  console.log('Cleared existing chunks');
-
   for (const chunk of chunks) {
     const embedding = await embedChunk(chunk);
 
