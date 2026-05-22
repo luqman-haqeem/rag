@@ -5,8 +5,6 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
-      - "443:443"
-      - "443:443/udp"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data
@@ -16,7 +14,6 @@ services:
 
   query:
     build: .
-    image: patient-data:latest
     container_name: patient-query
     restart: unless-stopped
     env_file: .env
@@ -28,7 +25,6 @@ services:
 
   ingest:
     build: .
-    image: patient-data:latest
     container_name: patient-ingest
     env_file: .env
     command: ["node", "ingest.js"]

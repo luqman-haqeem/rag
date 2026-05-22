@@ -24,3 +24,16 @@ Each chunk and query are converted into vectors using the same embedding model. 
 - Add proper authentication and rate limiting on the query endpoint
 - Use row-level security in Supabase so each doctor only sees 
   their own patients
+
+ ## How to Run
+
+  Prerequisites: Docker, and a `.env` file with your OpenRouter key and Supabase connection string.
+
+  1. Start the services:
+     docker compose up -d
+
+  2. Ingest the patient records (run once, or whenever data changes):
+     docker compose run --rm ingest
+
+  3. Open `http://localhost` in your browser to ask questions.
+
